@@ -113,7 +113,7 @@ export default function FoundersSection() {
 
         <div className="founders-text" style={{ maxWidth: '900px', margin: '140px auto 0' }}>
           <p className="section-p" style={{ fontSize: '28px', fontStyle: 'italic', color: 'rgba(255,255,255,0.9)', lineHeight: 1.6 }}>
-            "Alex and Lwazi are passionately devoted to the craft of photography. With an innate edge for raw emotion and timeless elegance, they ensure that every memory captured becomes an unforgettable story."
+            &ldquo;Alex and Lwazi are passionately devoted to the craft of photography. With an innate edge for raw emotion and timeless elegance, they ensure that every memory captured becomes an unforgettable story.&rdquo;
           </p>
         </div>
       </div>

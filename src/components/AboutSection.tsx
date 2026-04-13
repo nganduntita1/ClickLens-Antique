@@ -65,7 +65,7 @@ export default function AboutSection() {
             </div>
             <div className="about-text">
                <h2>The Artist Behind the Lens</h2>
-               <p>Hi, I'm Alice. My passion lies in capturing the fleeting, raw emotion of human connection. Every session is an opportunity to immortalize what words cannot express, crafted beautifully with organic tones and natural light.</p>
+               <p>Hi, I&apos;m Alice. My passion lies in capturing the fleeting, raw emotion of human connection. Every session is an opportunity to immortalize what words cannot express, crafted beautifully with organic tones and natural light.</p>
                <button className="hero-button">Read My Story</button>
             </div>
           </div>
