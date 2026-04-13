@@ -102,7 +102,7 @@ export default function Hero() {
               transform: `translate(calc(-50% + ${data.x}px), calc(-50% + ${data.y}px)) rotate(${data.rot}deg)`,
             }}
           >
-            <img src={data.src} alt="" />
+            <img src={data.src} alt="" fetchPriority="high" decoding="async" />
           </div>
         ))}
       </div>

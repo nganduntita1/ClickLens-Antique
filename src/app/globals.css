@@ -456,3 +456,20 @@ body {
     margin-top: 0px;
   }
 }
+
+/* Preloader Sequence Styles */
+.preloader-bar {
+  width: 100%;
+  height: 100%;
+  background: #ffb888;
+  box-shadow: 0 0 10px #ffb888;
+  transform-origin: left;
+  animation: loadingBar 1.5s infinite ease-in-out;
+}
+
+@keyframes loadingBar {
+  0% { transform: scaleX(0); transform-origin: left; }
+  49% { transform: scaleX(1); transform-origin: left; }
+  50% { transform: scaleX(1); transform-origin: right; }
+  100% { transform: scaleX(0); transform-origin: right; }
+}

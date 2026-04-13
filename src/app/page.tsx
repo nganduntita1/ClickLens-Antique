@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import StorySection from "@/components/StorySection";
 import FoundersSection from "@/components/FoundersSection";
 import ServicesSection from "@/components/ServicesSection";
+import Preloader from "@/components/Preloader";
 // import HowSection from "@/components/HowSection";
 import FooterSection from "@/components/FooterSection";
 
@@ -13,6 +14,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
+      <Preloader />
       <div className="fixed-bg"></div>
       <main>
         <Hero />
