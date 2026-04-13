@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -65,9 +66,9 @@ export default function StorySection() {
         
         {/* 3D Deep Space Wrapper */}
         <div style={{ position: 'absolute', width: '100%', height: '100%', transformStyle: 'preserve-3d', pointerEvents: 'none', zIndex: 2 }}>
-            <img src="/assets/hero_image2.png" className="cinematic-img-1" style={{ position: 'absolute', top: '30%', left: '30%', height: '45vh', objectFit: 'cover', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' }} alt="" />
-            <img src="/assets/hero_image4.png" className="cinematic-img-2" style={{ position: 'absolute', top: '15%', right: '35%', height: '55vh', objectFit: 'cover', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' }} alt="" />
-            <img src="/assets/hero_image7.png" className="cinematic-img-3" style={{ position: 'absolute', bottom: '10%', left: '45%', height: '40vh', objectFit: 'cover', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' }} alt="" />
+            <Image src="/assets/hero_image2.png" width={600} height={800} className="cinematic-img-1" style={{ position: 'absolute', top: '30%', left: '30%', height: '45vh', width: 'auto', objectFit: 'cover', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' }} alt="" />
+            <Image src="/assets/hero_image4.png" width={600} height={800} className="cinematic-img-2" style={{ position: 'absolute', top: '15%', right: '35%', height: '55vh', width: 'auto', objectFit: 'cover', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' }} alt="" />
+            <Image src="/assets/hero_image7.png" width={600} height={800} className="cinematic-img-3" style={{ position: 'absolute', bottom: '10%', left: '45%', height: '40vh', width: 'auto', objectFit: 'cover', borderRadius: '16px', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' }} alt="" />
         </div>
 
         {/* Floating Titles */}

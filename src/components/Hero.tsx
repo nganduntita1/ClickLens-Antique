@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -102,7 +103,7 @@ export default function Hero() {
               transform: `translate(calc(-50% + ${data.x}px), calc(-50% + ${data.y}px)) rotate(${data.rot}deg)`,
             }}
           >
-            <img src={data.src} alt="" fetchPriority="high" decoding="async" />
+            <Image src={data.src} alt="" fill sizes="250px" priority style={{ objectFit: 'cover' }} />
           </div>
         ))}
       </div>

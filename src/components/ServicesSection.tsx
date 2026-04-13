@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -64,8 +65,8 @@ export default function ServicesSection() {
           
           {/* Block 1: Image Left, Text Right using media.png */}
           <div className="media-block">
-            <div className="srv-huge-img-container" style={{ overflow: 'hidden', height: '800px', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.6)' }}>
-              <img src="/assets/media.png" alt="Complete Vintage Setup" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <div className="srv-huge-img-container" style={{ position: 'relative', overflow: 'hidden', height: '800px', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.6)' }}>
+              <Image src="/assets/media.png" alt="Complete Vintage Setup" fill sizes="(max-width: 768px) 100vw, 800px" style={{ objectFit: 'cover', display: 'block' }} />
             </div>
             
             <div className="srv-text-wrapper" style={{ padding: '0 40px' }}>
@@ -89,8 +90,8 @@ export default function ServicesSection() {
                </div>
             </div>
             
-            <div className="srv-huge-img-container" style={{ overflow: 'hidden', height: '800px', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.6)', order: 2 }}>
-              <img src="/assets/media2.png" alt="Family Photography" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+            <div className="srv-huge-img-container" style={{ position: 'relative', overflow: 'hidden', height: '800px', borderRadius: '16px', boxShadow: '0 20px 60px rgba(0,0,0,0.6)' }}>
+              <Image src="/assets/media2.png" alt="Full Location Journey" fill sizes="(max-width: 768px) 100vw, 800px" style={{ objectFit: 'cover', display: 'block' }} />
             </div>
           </div>
 

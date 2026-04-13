@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -81,12 +82,13 @@ export default function FoundersSection() {
           <div className="founder-1" style={{ transformStyle: 'preserve-3d' }}>
             <div className="flip-card">
               <div className="flip-card-inner">
+                {/* 0-degree default forward variant */}
                 <div className="flip-card-front">
-                  <img src="/assets/founder1.png" alt="Alex Front" />
+                  <Image src="/assets/founder1.png" alt="Alex Front" fill sizes="(max-width: 768px) 100vw, 600px" style={{ objectFit: 'cover' }} />
                 </div>
                 {/* 180-backface variant */}
                 <div className="flip-card-back">
-                  <img src="/assets/founder1.2.png" alt="Alex Back" />
+                  <Image src="/assets/founder1.2.png" alt="Alex Back" fill sizes="(max-width: 768px) 100vw, 600px" style={{ objectFit: 'cover' }} />
                 </div>
               </div>
             </div>
@@ -98,11 +100,10 @@ export default function FoundersSection() {
             <div className="flip-card">
               <div className="flip-card-inner">
                 <div className="flip-card-front">
-                  <img src="/assets/founder2.1.png" alt="Lwazi Front" />
+                  <Image src="/assets/founder2.png" alt="Lwazi Front" fill sizes="(max-width: 768px) 100vw, 600px" style={{ objectFit: 'cover' }} />
                 </div>
-                {/* 180-backface variant */}
                 <div className="flip-card-back">
-                  <img src="/assets/founder2.png" alt="Lwazi Back" />
+                  <Image src="/assets/founder2.1.png" alt="Lwazi Back" fill sizes="(max-width: 768px) 100vw, 600px" style={{ objectFit: 'cover' }} />
                 </div>
               </div>
             </div>
